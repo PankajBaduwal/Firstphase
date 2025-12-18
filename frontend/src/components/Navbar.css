@@ -1,0 +1,99 @@
+/* Navbar Wrapper */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(2, 6, 23, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Container */
+.navbar-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.9rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #38bdf8;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    color: #e5e7eb;
+}
+
+/* Nav Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.nav-link {
+    color: #cbd5f5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #38bdf8;
+}
+
+/* Welcome Text */
+.welcome-text {
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.5rem 1.3rem;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Signup */
+.signup-btn {
+    background: #38bdf8;
+    color: #020617;
+}
+
+.signup-btn:hover {
+    background: #0ea5e9;
+}
+
+/* Logout */
+.logout-btn {
+    background: #ef4444;
+    color: #fff;
+}
+
+.logout-btn:hover {
+    background: #dc2626;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

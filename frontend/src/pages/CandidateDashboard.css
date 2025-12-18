@@ -1,0 +1,186 @@
+.candidate-dashboard {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.candidate-dashboard h2 {
+    color: #38bdf8;
+    margin-bottom: 1.5rem;
+}
+
+/* Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+/* Job Cards */
+.job-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.applied-badge {
+    background: rgba(34, 197, 94, 0.2);
+    color: #86efac;
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.job-exp,
+.job-desc,
+.job-skills {
+    font-size: 0.9rem;
+    color: #cbd5f5;
+    margin: 0.4rem 0;
+}
+
+/* Applications */
+.application-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #38bdf8;
+}
+
+.status {
+    font-weight: 600;
+}
+
+.status.applied {
+    color: #93c5fd;
+}
+
+.status.shortlisted {
+    color: #86efac;
+}
+
+.status.rejected {
+    color: #fca5a5;
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.modal-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 2rem;
+    border-radius: 18px;
+    width: 420px;
+    max-width: 90%;
+    backdrop-filter: blur(14px);
+}
+
+.modal-subtitle {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 1rem;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Messages */
+.message.success {
+    color: #22c55e;
+}
+
+.message.error {
+    color: #ef4444;
+}
+
+.empty-text {
+    color: #94a3b8;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.55rem 1.2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background: #38bdf8;
+    color: #020617;
+}
+
+.primary-btn:hover {
+    background: #0ea5e9;
+}
+
+.outline-btn {
+    background: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.outline-btn:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* AI Stats in Application Card */
+.ai-stats {
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.ai-score {
+    margin-bottom: 5px;
+    color: #e2e8f0;
+}
+
+.skill-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.matched-skills {
+    color: #4ade80;
+    /* Green */
+    font-size: 0.85rem;
+}
+
+.missing-skills {
+    color: #f87171;
+    /* Red */
+    font-size: 0.85rem;
+}

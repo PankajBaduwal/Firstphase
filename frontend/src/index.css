@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded font-semibold transition-colors duration-200 cursor-pointer inline-block text-center text-white;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white;
+  }
+
+  .card {
+    @apply bg-white p-6 rounded-lg shadow-md border border-gray-100;
+  }
+
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .input-group {
+    @apply mb-4 flex flex-col gap-1;
+  }
+
+  .input-group label {
+    @apply text-sm font-medium text-gray-700;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm p-2 border;
+  }
+
+  .navbar {
+    @apply bg-white shadow-sm border-b border-gray-200;
+  }
+
+  .navbar-content {
+    @apply flex justify-between items-center h-16;
+  }
+
+  .nav-links {
+    @apply flex items-center space-x-4;
+  }
+
+  .nav-links a {
+    @apply text-gray-700 hover:text-blue-600 font-medium no-underline transition-colors;
+  }
+
+  .logo {
+    @apply text-xl font-bold text-blue-600 no-underline hover:text-blue-800 transition-colors;
+  }
+}
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  background-color: #f9fafb;
+  /* bg-gray-50 */
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  @apply bg-gray-50 text-gray-900;
+}

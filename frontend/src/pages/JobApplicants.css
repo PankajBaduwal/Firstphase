@@ -1,0 +1,258 @@
+.applicants-page {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.back-link {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.applicants-page h2 {
+    margin-top: 1rem;
+    color: #38bdf8;
+}
+
+.subtitle {
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+}
+
+/* Table */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.applicants-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.applicants-table th,
+.applicants-table td {
+    padding: 1rem;
+    text-align: left;
+}
+
+.applicants-table thead {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.applicants-table th {
+    color: #cbd5f5;
+    font-size: 0.85rem;
+}
+
+.applicants-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.applicants-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+/* Rank Highlight */
+.rank {
+    font-weight: bold;
+}
+
+.top-rank {
+    background: rgba(16, 185, 129, 0.08);
+}
+
+/* Score Bar */
+.score-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    /* For Tooltip */
+    cursor: help;
+    transition: all 0.2s ease;
+}
+
+/* Clickable Score Wrapper */
+.score-wrapper.clickable {
+    cursor: pointer;
+    padding: 8px 12px;
+    margin: -8px -12px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.score-wrapper.clickable:hover {
+    background: rgba(56, 189, 248, 0.1);
+    transform: scale(1.02);
+}
+
+.score-wrapper.clickable:active {
+    transform: scale(0.98);
+}
+
+.score-text {
+    font-weight: bold;
+    color: #e2e8f0;
+}
+
+.score-bar {
+    width: 100px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.score-fill {
+    height: 100%;
+    border-radius: 4px;
+}
+
+.score-fill.high {
+    background: #4ade80;
+}
+
+.score-fill.medium {
+    background: #facc15;
+}
+
+.score-fill.low {
+    background: #f87171;
+}
+
+/* Skill Tooltip */
+.skill-tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(15, 23, 42, 0.95);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #38bdf8;
+    width: 250px;
+    z-index: 10;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+}
+
+.score-wrapper:hover .skill-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-section {
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+.tooltip-section:last-child {
+    margin-bottom: 0;
+}
+
+.tooltip-section strong {
+    display: block;
+    color: #cbd5e1;
+    margin-bottom: 2px;
+}
+
+.tooltip-section .success {
+    color: #4ade80;
+}
+
+.tooltip-section .error {
+    color: #f87171;
+}
+
+.tooltip-hint {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.tooltip-hint small {
+    color: #38bdf8;
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+/* Status */
+.status {
+    padding: 0.25rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status.applied {
+    background: rgba(59, 130, 246, 0.2);
+    color: #93c5fd;
+}
+
+.status.shortlisted {
+    background: rgba(34, 197, 94, 0.2);
+    color: #86efac;
+}
+
+.status.rejected {
+    background: rgba(239, 68, 68, 0.2);
+    color: #fca5a5;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.35rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.outline-btn {
+    background: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.outline-btn:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
+/* States */
+.loader {
+    text-align: center;
+    margin-top: 4rem;
+    color: #94a3b8;
+}
+
+.error-page {
+    text-align: center;
+    margin-top: 4rem;
+    color: #fca5a5;
+}
+
+.empty-text {
+    color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .applicants-table th,
+    .applicants-table td {
+        padding: 0.7rem;
+    }
+}

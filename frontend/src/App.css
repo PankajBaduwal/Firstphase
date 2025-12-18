@@ -1,0 +1,102 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+/* App container */
+.app {
+  min-height: 100vh;
+}
+
+/* Loader */
+.loader {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.2rem;
+  color: #93c5fd;
+}
+
+/* Home Page */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px);
+  padding: 1rem;
+}
+
+.home-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3rem;
+  max-width: 550px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.home-card h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #38bdf8;
+}
+
+.home-card p {
+  font-size: 1.1rem;
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.home-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.7rem 1.6rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.btn.primary:hover {
+  background: #0ea5e9;
+}
+
+.btn.secondary {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.btn.secondary:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .home-card {
+    padding: 2rem;
+  }
+
+  .home-card h1 {
+    font-size: 2.2rem;
+  }
+}
